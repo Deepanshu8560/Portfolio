@@ -6,7 +6,7 @@ const services = [
   {
     num: '01',
     title: 'Web Development',
-    description: 'I offer professional web development services tailored to meet your unique needs, whether you’re a small business, a large corporation, or an individual looking to establish your personal brand.',
+    description: 'I offer professional web development services, specializing in creating responsive, user-friendly websites using HTML, CSS, and JavaScript. From front-end design to back-end development, I build customized solutions tailored to your business needs.',
     href: "",
   },
   {
