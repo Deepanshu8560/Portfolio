@@ -42,7 +42,7 @@ const about ={
 const experience = {
   icon: "/",
   title: "My experience",
-  description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, voluptate.",
+  description: "During my internship at Internship Studio as a Web Design and Development Intern, I developed responsive websites using HTML, CSS, and JavaScript. I worked on both front-end and back-end tasks, including server-side logic and databases. I also collaborated on UI/UX design, creating wireframes and mockups. This experience sharpened my development and design skills.",
   items:[
     {
       company: "Internship Studio",
@@ -55,7 +55,6 @@ const experience = {
 const education = {
   icon: "/",
   title: "My Education",
-  description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, voluptate.",
   items:[
     {
       Institution: "St. Mary's Convent School",
