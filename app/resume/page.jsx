@@ -241,7 +241,7 @@ const Resume = () => {
                       return (
                         <li key="index" className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1">
                           <span className="text-accent">{item.Duration}</span>
-                          <Link href={item.path} >
+                          <Link href={item.path} target="Blank">
                             <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">{item.Course}</h3>
                           </Link>
                           <div className="flex items-center gap-3">
