@@ -21,7 +21,7 @@ const projects = [
     stack: [{name:"Html 5"}, {name:"Css 3"}, {name:"JavaScript"}],
     Image: '/images/cars.png',
     live: '',
-    github: "",
+    github: "https://github.com/Deepanshu8560/Car-Rental-Website",
   },
   {
     num: '02',
@@ -31,7 +31,7 @@ const projects = [
     stack: [{name:"Html5"}, {name:"Css3"}, {name:"JavaScript"}, {name:"Node.js"}, {name:"Vite"},{name:"API"} ],
     Image: '/images/ecom1.png',
     live: '',
-    github: "",
+    github: "https://github.com/Deepanshu8560/ShopShere-Ecommerce-Website",
   },
   {
     num: '03',
@@ -41,7 +41,7 @@ const projects = [
     stack: [{name:"Python"}, {name:"Streamlit"}, {name:"API"} ],
     Image: '/images/mov1.png',
     live: '',
-    github: "",
+    github: "https://github.com/Deepanshu8560/Movie-Recommender-System",
   },
 ];
 
