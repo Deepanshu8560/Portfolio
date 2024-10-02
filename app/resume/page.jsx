@@ -57,9 +57,9 @@ const education = {
   title: "My Education",
   items:[
     {
-      Institution: "St. Mary's Convent School",
-      degree: "Primary and Secondary Education",
-      Duration: "2007-2016",
+      Institution: "Alliance University",
+      degree: "B.Tech - Computer Science",
+      Duration: "2020-2024",
     },
     {
       Institution: "LBS School",
@@ -67,9 +67,9 @@ const education = {
       Duration: "2019-2020",
     },
     {
-      Institution: "Alliance University",
-      degree: "B.Tech - Computer Science",
-      Duration: "2020-2024",
+      Institution: "St. Mary's Convent School",
+      degree: "Primary and Secondary Education",
+      Duration: "2007-2016",
     },
   ],
 };
