@@ -19,7 +19,7 @@ const Photo = () => {
             }}
             className="w-[250px] h-[250px] xl:w-[450px] xl:h-[450px] mix-blend-lighten absolute ">
                 <Image 
-                src="/images/photo.png" 
+                src="/images/image.png" 
                 priority quality={100}
                 fill 
                 alt="" className="object-contain" />
