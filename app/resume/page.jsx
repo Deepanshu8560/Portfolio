@@ -1,7 +1,7 @@
 'use client';
 import Link from "next/link";
-import {FaHtml5, FaCss3, FaJs, FaReact, FaFigma, FaNodeJs } from "react-icons/fa";
-import {SiTailwindcss, SiNextdotjs} from "react-icons/si";
+import {FaHtml5, FaCss3, FaJs, FaReact, FaFigma, FaNodeJs, FaJava, FaPython } from "react-icons/fa";
+import {SiTailwindcss, SiNextdotjs, SiMysql} from "react-icons/si";
 
 const about ={
   title: 'About Me',
@@ -42,12 +42,13 @@ const about ={
 const experience = {
   icon: "/",
   title: "My experience",
-  description: "During my internship at Internship Studio as a Web Design and Development Intern, I developed responsive websites using HTML, CSS, and JavaScript. I worked on both front-end and back-end tasks, including server-side logic and databases. I also collaborated on UI/UX design, creating wireframes and mockups. This experience sharpened my development and design skills.",
+  description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, voluptate.",
   items:[
     {
       company: "Internship Studio",
       position: "Wed Design and Development Intern",
       Duration: "Jul-2024 - Aug-2024",
+      path:'./internship.pdf',
     }
   ],
 };
@@ -55,11 +56,12 @@ const experience = {
 const education = {
   icon: "/",
   title: "My Education",
+  
   items:[
     {
-      Institution: "Alliance University",
-      degree: "B.Tech - Computer Science",
-      Duration: "2020-2024",
+      Institution: "St. Mary's Convent School",
+      degree: "Primary and Secondary Education",
+      Duration: "2007-2016",
     },
     {
       Institution: "LBS School",
@@ -67,9 +69,9 @@ const education = {
       Duration: "2019-2020",
     },
     {
-      Institution: "St. Mary's Convent School",
-      degree: "Primary and Secondary Education",
-      Duration: "2007-2016",
+      Institution: "Alliance University",
+      degree: "B.Tech - Computer Science",
+      Duration: "2020-2024",
     },
   ],
 };
@@ -104,6 +106,18 @@ const skills = {
   title: "My Skills",
   description: "",
   SkillList: [
+    {
+      icon: <FaJava />,
+      name: "Java",
+    },
+    {
+      icon: <FaPython />,
+      name: "Python",
+    },
+    {
+      icon: <SiMysql />,
+      name: "MySQL",
+    },
     {
       icon: <FaHtml5 />,
       name: "Html 5",
@@ -144,6 +158,9 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { easeIn, motion } from "framer-motion";
+import { BsArrowDownRight } from "react-icons/bs";
+import { Button } from "@/components/ui/button";
+import { FiDownload } from "react-icons/fi";
 
 const Resume = () => {
   return (
@@ -164,19 +181,31 @@ const Resume = () => {
             <TabsContent value="experience" className="w-full">
               <div className="flex flex-col gap-[30px] text-centre xl:text-left">
                 <h3 className="text-4xl font-bold">{experience.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{experience.description}</p>
+                <p className="max-w-[400px] text-white/60 mx-auto xl:mx-0">{experience.description}</p>
                 <ScrollArea className="h-[400px]">
                   <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px] ">
                     {experience.items.map((item, index)=> {
                       return (
-                        <li key="index" className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1">
+                        <li key="index" className="bg-[#232329] h-[250px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1">
                           <span className="text-accent">{item.Duration}</span>
                           <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">{item.position}</h3>
                           <div className="flex items-center gap-3">
                             <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
                             <p className="text-white/60 ">{item.company}</p>
+                            
                           </div>
+                          <form action="./internship.pdf">
+                              <Button 
+                              variant="outline" 
+                              size="lg"
+                              
+                              className="uppercase flex items-center">
+                                <span>Download Certificate</span>
+                                <FiDownload className="text-xl" />
+                              </Button>
+                            </form>
                         </li>
+                        
                       );
                     })}
                   </ul>
@@ -233,8 +262,8 @@ const Resume = () => {
             </TabsContent>
             <TabsContent value="certifications" className="w-full">
             <div className="flex flex-col gap-[30px] text-centre xl:text-left">
+              
                 <h3 className="text-4xl font-bold">{certifications.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{certifications.description}</p>
                 <ScrollArea className="h-[400px]">
                   <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px] ">
                     {certifications.items.map((item, index)=> {
@@ -280,3 +309,4 @@ const Resume = () => {
 };
 
 export default Resume;
+<BsArrowDownRight className="text-primary text-md " />
