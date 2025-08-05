@@ -59,9 +59,6 @@ The easiest way to deploy this portfolio is through **[Vercel](https://vercel.co
 
 ---
 
-## 🙌 Contributions
-
-Feel free to fork the repository and submit pull requests or open issues to improve the project.
 
 
 
@@ -70,6 +67,12 @@ Feel free to fork the repository and submit pull requests or open issues to impr
 <img src="./ss/port2.png">
 
 <img src="./ss/port3.png">
+
+
+## 🙌 Contributions
+
+Feel free to fork the repository and submit pull requests or open issues to improve the project.
+
 
 <img src="./ss/port4.png">
 <img src="./ss/port5.png">
